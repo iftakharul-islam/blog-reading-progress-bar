@@ -11,7 +11,7 @@
  * License:           GPL v2 or later
  * License URI:       https://www.gnu.org/licenses/gpl-2.0.html
  * Update URI:        https://ifatwp.wordpress.com/2023/10/17/blog-reading-progress/
- * Text Domain:       blog-reading-progres
+ * Text Domain:       blog-reading-progress
  * Domain Path:       /languages
  */
 if (!defined('ABSPATH')) {
@@ -84,6 +84,10 @@ if (!class_exists('BRP_BAR')) {
          */
         public function reading_progress_bar_scripts()
         {
+            if (!is_singular()) { // currently for single post
+                return;
+            }
+
             wp_enqueue_style('brp_reading-progress-bar-style', plugin_dir_url(__FILE__) . 'assets/style.css', array(), self::$version);
             wp_enqueue_script('brp_reading-progress-bar-script', plugin_dir_url(__FILE__) . 'assets/script.js', array('jquery'), self::$version, true);
 

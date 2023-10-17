@@ -1,19 +1,19 @@
 <?php
-/**
- * Reading Progress Bar
- *
- * @wordpress-plugin
- * Plugin Name: Reading Progress Bar
- * Description: Adds a reading progress bar to blog posts.
- * Version: 1.0.0
+/*
+ * Plugin Name:       Reading Progress Bar
+ * Plugin URI:        https://ifatwp.wordpress.com/2023/10/17/blog-reading-progress/
+ * Description:       Adds a reading progress bar to blog posts.
+ * Version:           1.0.0
  * Requires at least: 5.6
- * Tested up to: 7.4
- * Author: ifatwp
- * Author URI: https://ifatwp.wordpress.com/
- * Text Domain: brp
- * Domain Path: /languages
+ * Requires PHP:      7.3
+ * Author:            ifatwp
+ * Author URI:        https://ifatwp.wordpress.com/
+ * License:           GPL v2 or later
+ * License URI:       https://www.gnu.org/licenses/gpl-2.0.html
+ * Update URI:        https://ifatwp.wordpress.com/2023/10/17/blog-reading-progress/
+ * Text Domain:       blog-reading-progres
+ * Domain Path:       /languages
  */
-
 if (!defined('ABSPATH')) {
     exit; // Exit if accessed directly.
 }
@@ -135,8 +135,8 @@ if (!class_exists('BRP_BAR')) {
             add_option(
                 'brp_reading_progress_bar_options',
                 array(
-                'color' => '#000',
-                'show_on_posts' => true,
+                    'color' => '#000',
+                    'show_on_posts' => true,
                 )
             );
             register_setting('brp_reading_progress_bar_options_group', 'brp_reading_progress_bar_options');
@@ -188,7 +188,7 @@ if (!class_exists('BRP_BAR')) {
                     <span> <?php esc_html_e('Display reading progress bar on this post', 'blog-reading-progres');?> </span>
                 </label>
             <?php
-        }
+}
 
         /**
          *  Save the meta box value.

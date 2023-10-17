@@ -147,7 +147,7 @@ if (!class_exists('BRP_BAR')) {
          */
         public function reading_progress_bar_options_page()
         {
-            add_options_page(__('Reading Progress Bar Settings', 'brp'), __('Reading Progress Bar', 'brp'), 'manage_options', 'brp-reading-progress-bar-settings', array($this, 'reading_progress_bar_render_options_page'));
+            add_options_page(__('Reading Progress Bar Settings', 'blog-reading-progres'), __('Reading Progress Bar', 'blog-reading-progres'), 'manage_options', 'brp-reading-progress-bar-settings', array($this, 'reading_progress_bar_render_options_page'));
         }
 
         /**
@@ -165,7 +165,7 @@ if (!class_exists('BRP_BAR')) {
         {
             add_meta_box(
                 'brp_reading_progress_bar_meta_box',
-                __('Reading Progress Bar', 'brp'),
+                __('Reading Progress Bar', 'blog-reading-progres'),
                 array($this, 'reading_progress_bar_meta_box_callback'),
                 'post',
                 'side'
@@ -185,7 +185,7 @@ if (!class_exists('BRP_BAR')) {
             ?>
                 <label for="brp_reading-progress-bar-checkbox">
                     <input type="checkbox" name="brp_reading_progress_bar_display" id="brp_reading-progress-bar-checkbox" value="1" <?php checked($checked);?> />
-                    <span> <?php esc_html_e('Display reading progress bar on this post', 'brp');?> </span>
+                    <span> <?php esc_html_e('Display reading progress bar on this post', 'blog-reading-progres');?> </span>
                 </label>
             <?php
         }

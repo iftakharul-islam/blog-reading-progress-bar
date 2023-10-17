@@ -151,7 +151,7 @@ if (!class_exists('BRP_BAR')) {
          */
         public function reading_progress_bar_options_page()
         {
-            add_options_page(__('Reading Progress Bar Settings', 'blog-reading-progres'), __('Reading Progress Bar', 'blog-reading-progres'), 'manage_options', 'brp-reading-progress-bar-settings', array($this, 'reading_progress_bar_render_options_page'));
+            add_options_page(__('Reading Progress Bar Settings', 'blog-reading-progres'), __('Reading Progress Bar', 'blog-reading-progress'), 'manage_options', 'brp-reading-progress-bar-settings', array($this, 'reading_progress_bar_render_options_page'));
         }
 
         /**

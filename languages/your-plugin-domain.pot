@@ -1,0 +1,63 @@
+# Copyright (C) 2023 ifatwp
+# This file is distributed under the GPL v2 or later.
+msgid ""
+msgstr ""
+"Project-Id-Version: Blog Reading Progress Bar 1.0.0\n"
+"Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/blog-reading-progress\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"POT-Creation-Date: 2023-12-15T12:50:25+00:00\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"X-Generator: WP-CLI 2.8.1\n"
+"X-Domain: blog-reading-progress\n"
+
+#. Plugin Name of the plugin
+msgid "Blog Reading Progress Bar"
+msgstr ""
+
+#. Plugin URI of the plugin
+msgid "https://ifatwp.wordpress.com/2023/10/17/blog-reading-progress/"
+msgstr ""
+
+#. Description of the plugin
+msgid "Adds a reading progress bar to blog posts."
+msgstr ""
+
+#. Author of the plugin
+msgid "ifatwp"
+msgstr ""
+
+#. Author URI of the plugin
+msgid "https://ifatwp.wordpress.com/"
+msgstr ""
+
+#: blog-reading-progress-bar.php:154
+msgid "Reading Progress Bar"
+msgstr ""
+
+#: inc/reader-options.php:2
+msgid "Reading Progress Bar Settings"
+msgstr ""
+
+#: inc/reader-options.php:7
+msgid "Appearance"
+msgstr ""
+
+#: inc/reader-options.php:10
+msgid "Color"
+msgstr ""
+
+#: inc/reader-options.php:14
+msgid "Height"
+msgstr ""
+
+#: inc/reader-options.php:15
+msgid "pixels"
+msgstr ""
+
+#: inc/reader-options.php:22
+msgid "Show on Posts"
+msgstr ""

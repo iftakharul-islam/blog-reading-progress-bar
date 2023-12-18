@@ -3,11 +3,11 @@
 Contributors: ifatwp
 Tags: progress bar, reading progress, blog, posts
 Requires PHP :7.3
+Requires at least :5.6
 Tested up to: WordPress 6.3.3
-Stable tag: 1.0.0
+Stable tag: 1.0.1
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.txt
-
 
 Adds a reading progress bar to blog posts.
 
@@ -24,13 +24,13 @@ The Reading Progress Bar plugin adds a progress bar to your blog posts, allowing
 
 == Installation ==
 
-1. Upload the `reading-progress-bar` folder to the `/wp-content/plugins/` directory.
+1. Upload the `blog-reading-progress-bar` folder to the `/wp-content/plugins/` directory.
 2. Activate the plugin through the 'Plugins' menu in WordPress.
-3. Go to 'Reading Progress Bar' in the WordPress dashboard to configure the plugin settings.
+3. Go to 'Blog Reading Progress Bar' in the WordPress dashboard to configure the plugin settings.
 
 == Configuration ==
 
-1. Navigate to 'Settings' > 'Reading Progress Bar' in the WordPress dashboard.
+1. Navigate to 'Settings' > 'Blog Reading Progress Bar' in the WordPress dashboard.
 2. Customize the options according to your preference, such as the color and height of the progress bar.
 3. Choose whether to display the progress bar on all posts or specific posts.
 4. Save your changes.
@@ -39,7 +39,7 @@ The Reading Progress Bar plugin adds a progress bar to your blog posts, allowing
 
 = How can I customize the appearance of the progress bar? =
 
-You can modify the color and height of the progress bar by navigating to 'Settings' > 'Reading Progress Bar' in the WordPress dashboard. Use the provided options to adjust the settings to your liking.
+You can modify the color and height of the progress bar by navigating to 'Settings' > 'Blog Reading Progress Bar' in the WordPress dashboard. Use the provided options to adjust the settings to your liking.
 
 = Can I enable the progress bar on specific posts only?
 
@@ -47,23 +47,32 @@ Yes, you have the option to enable or disable the progress bar on individual pos
 
 == Changelog ==
 
-= 1.0.0 =
-* Initial release.
+== 1.0.1 ==
 
-== Upgrade Notice ==
+Text domain updated to plugin slug
+Pot File Added
 
 = 1.0.0 =
 Initial release of the Reading Progress Bar plugin.
+
+== Upgrade Notice ==
 
 == Screenshots ==
 
 1. Progress bar displayed on a blog post.
+   ![Progress Bar on Blog Post](https://plugins.trac.wordpress.org/browser/blog-reading-progress-bar/assets/Screenshot-4.png)
+
 2. Plugin settings page in the WordPress dashboard.
+   ![Plugin Settings](https://plugins.trac.wordpress.org/browser/blog-reading-progress-bar/assets/Screenshot-2.png)
+
+3. Plugin settings option in the post editor.
+   ![Plugin Settings](https://plugins.trac.wordpress.org/browser/blog-reading-progress-bar/assets/Screenshot-3.png)
+
+4. Plugin settings in menu.
+   ![Plugin Settings](https://plugins.trac.wordpress.org/browser/blog-reading-progress-bar/assets/Screenshot-1.png)
 
 == Upgrade Notice ==
 
-= 1.0.0 =
-Initial release of the Reading Progress Bar plugin.
 
 == License ==
 

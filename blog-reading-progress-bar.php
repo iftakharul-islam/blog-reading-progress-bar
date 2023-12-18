@@ -1,9 +1,9 @@
 <?php
 /*
- * Plugin Name:       Reading Progress Bar
+ * Plugin Name:       Blog Reading Progress Bar
  * Plugin URI:        https://ifatwp.wordpress.com/2023/10/17/blog-reading-progress/
  * Description:       Adds a reading progress bar to blog posts.
- * Version:           1.0.0
+ * Version:           1.0.1
  * Requires at least: 5.6
  * Requires PHP:      7.3
  * Author:            ifatwp
@@ -11,9 +11,10 @@
  * License:           GPL v2 or later
  * License URI:       https://www.gnu.org/licenses/gpl-2.0.html
  * Update URI:        https://ifatwp.wordpress.com/2023/10/17/blog-reading-progress/
- * Text Domain:       blog-reading-progress
+ * Text Domain:       blog-reading-progress-bar
  * Domain Path:       /languages
  */
+
 if (!defined('ABSPATH')) {
     exit; // Exit if accessed directly.
 }
@@ -35,7 +36,7 @@ if (!class_exists('BRP_BAR')) {
          *
          * @var version.
          */
-        protected static $version = '1.0.0';
+        protected static $version = '1.0.1';
 
         /**
          * Return Instance
@@ -151,7 +152,7 @@ if (!class_exists('BRP_BAR')) {
          */
         public function reading_progress_bar_options_page()
         {
-            add_options_page(__('Reading Progress Bar Settings', 'blog-reading-progres'), __('Reading Progress Bar', 'blog-reading-progress'), 'manage_options', 'brp-reading-progress-bar-settings', array($this, 'reading_progress_bar_render_options_page'));
+            add_options_page(__('Reading Progress Bar Settings', 'blog-reading-progress-bar'), __('Reading Progress Bar', 'blog-reading-progress-bar'), 'manage_options', 'brp-reading-progress-bar-settings', array($this, 'reading_progress_bar_render_options_page'));
         }
 
         /**
@@ -169,7 +170,7 @@ if (!class_exists('BRP_BAR')) {
         {
             add_meta_box(
                 'brp_reading_progress_bar_meta_box',
-                __('Reading Progress Bar', 'blog-reading-progres'),
+                __('Reading Progress Bar', 'blog-reading-progress-bar'),
                 array($this, 'reading_progress_bar_meta_box_callback'),
                 'post',
                 'side'
@@ -189,7 +190,7 @@ if (!class_exists('BRP_BAR')) {
             ?>
                 <label for="brp_reading-progress-bar-checkbox">
                     <input type="checkbox" name="brp_reading_progress_bar_display" id="brp_reading-progress-bar-checkbox" value="1" <?php checked($checked);?> />
-                    <span> <?php esc_html_e('Display reading progress bar on this post', 'blog-reading-progres');?> </span>
+                    <span> <?php esc_html_e('Display reading progress bar on this post', 'blog-reading-progress-bar');?> </span>
                 </label>
             <?php
 }

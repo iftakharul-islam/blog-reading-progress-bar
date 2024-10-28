@@ -10,7 +10,6 @@
  * Author URI:        https://ifatwp.wordpress.com/
  * License:           GPL v2 or later
  * License URI:       https://www.gnu.org/licenses/gpl-2.0.html
- * Update URI:        https://ifatwp.wordpress.com/2023/10/17/blog-reading-progress/
  * Text Domain:       blog-reading-progress
  * Domain Path:       /languages
  */

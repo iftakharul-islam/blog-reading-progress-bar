@@ -3,7 +3,7 @@
 Contributors: ifatwp
 Tags: progress bar, reading progress, blog, posts
 Requires PHP : 7.3
-Tested up to: WordPress 6.6
+Tested up to: WordPress 6.7.2
 Stable tag: 1.0.6
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.txt
@@ -46,6 +46,12 @@ You can modify the color and height of the progress bar by navigating to 'Settin
 Yes, you have the option to enable or disable the progress bar on individual posts. Edit a post and look for the "Reading Progress Bar" meta box in the sidebar. Check the box to display the progress bar on that post, or uncheck it to hide the progress bar.
 
 == Changelog ==
+
+= 1.0.7 =
+
+= v1.0.7 - Feb 12, 2025 =
+
+**Added:** Tested upto 6.7.2
 
 = 1.0.0 =
 * Initial release.

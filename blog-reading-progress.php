@@ -3,7 +3,7 @@
  * Plugin Name:       Reading Progress Bar
  * Plugin URI:        https://ifatwp.wordpress.com/2023/10/17/blog-reading-progress/
  * Description:       Adds a reading progress bar to blog posts.
- * Version:           1.0.6
+ * Version:           1.0.7
  * Requires at least: 5.6
  * Requires PHP:      7.3
  * Author:            ifatwp

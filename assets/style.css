@@ -7,4 +7,78 @@
     background-color: #2ab576;
     z-index: 9999;
     transition: width 0.2s ease;
-  }
+}
+
+/* Enhanced styling for new features */
+#reading-progress-bar {
+    /* Default styles that can be overridden by admin settings */
+    border-radius: 0;
+    opacity: 1;
+    box-shadow: none;
+    border: none;
+}
+
+/* Reading time display */
+#reading-time {
+    position: fixed;
+    top: 42px;
+    right: 20px;
+    background: rgba(0, 0, 0, 0.8);
+    color: white;
+    padding: 8px 12px;
+    border-radius: 4px;
+    font-size: 12px;
+    font-weight: 500;
+    z-index: 9998;
+    backdrop-filter: blur(10px);
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+    transition: opacity 0.3s ease;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    #reading-progress-bar {
+        top: 46px; /* Account for mobile admin bar */
+    }
+    
+    #reading-time {
+        top: 56px;
+        right: 10px;
+        font-size: 11px;
+        padding: 6px 10px;
+    }
+}
+
+/* Animation for progress bar */
+@keyframes progress-glow {
+    0% { box-shadow: 0 0 5px currentColor; }
+    50% { box-shadow: 0 0 20px currentColor; }
+    100% { box-shadow: 0 0 5px currentColor; }
+}
+
+#reading-progress-bar.animated {
+    animation: progress-glow 2s ease-in-out infinite;
+}
+
+/* High contrast mode support */
+@media (prefers-contrast: high) {
+    #reading-progress-bar {
+        border: 2px solid #000;
+    }
+    
+    #reading-time {
+        border: 2px solid #000;
+        background: #000;
+    }
+}
+
+/* Reduced motion support */
+@media (prefers-reduced-motion: reduce) {
+    #reading-progress-bar {
+        transition: none;
+    }
+    
+    #reading-time {
+        transition: none;
+    }
+}

@@ -1,70 +1,165 @@
-=== Reading Progress Bar ===
+# Reading Progress Bar
 
-Contributors: ifatwp
-Tags: progress bar, reading progress, blog, posts
-Requires PHP : 7.3
-Tested up to: WordPress 6.3.3
-Stable tag: 1.0.5
-License: GPLv2 or later
-License URI: http://www.gnu.org/licenses/gpl-2.0.txt
+A modern, feature-rich WordPress plugin that adds a customizable reading progress bar to your blog posts with advanced styling options and enhanced user experience.
 
+## 🚀 Features
 
-Adds a reading progress bar to blog posts.
+### Core Functionality
+- **Reading Progress Tracking**: Real-time progress bar that shows how much of the post has been read
+- **Per-Post Control**: Enable/disable progress bar for individual posts
+- **Reading Time Estimation**: Display estimated reading time for posts
+- **Responsive Design**: Works perfectly on desktop, tablet, and mobile devices
 
-== Description ==
+### Advanced Customization
+- **Color Options**: 
+  - Solid color picker
+  - Gradient color support with start and end colors
+  - Custom shadow colors
+  - Border color customization
 
-The Reading Progress Bar plugin adds a progress bar to your blog posts, allowing readers to see how much they have scrolled through the content. This feature helps to enhance the reading experience and provides a visual indication of the user's progress.
+### Visual Effects
+- **Position Control**: Place progress bar at top or bottom of screen
+- **Size Customization**: Adjustable height (1-20px)
+- **Border Radius**: Rounded corners (0-50px)
+- **Opacity Control**: Adjust transparency (0.1-1.0)
+- **Shadow Effects**: Customizable shadow with color and blur options
+- **Border Styling**: Optional border with custom color and width
 
-== Features ==
+### User Experience
+- **Smooth Animations**: Fluid progress updates with CSS transitions
+- **Performance Optimized**: Uses requestAnimationFrame for smooth scrolling
+- **Keyboard Navigation**: Space bar and arrow key support
+- **Touch Gestures**: Swipe support for mobile devices
+- **Accessibility**: High contrast mode and reduced motion support
 
-- Automatically adds a reading progress bar to blog posts.
-- Customizable options to control the appearance and behavior of the progress bar.
-- Option to enable or disable the progress bar on specific posts.
-- Lightweight and easy to use.
+### Dashboard Features
+- **Modern Admin Interface**: Beautiful, responsive dashboard
+- **Live Preview**: See changes in real-time as you adjust settings
+- **Statistics**: View posts with progress bar enabled vs total posts
+- **Organized Settings**: Grouped options for easy configuration
 
-== Installation ==
+## 📋 Requirements
 
-1. Upload the `reading-progress-bar` folder to the `/wp-content/plugins/` directory.
-2. Activate the plugin through the 'Plugins' menu in WordPress.
-3. Go to 'Reading Progress Bar' in the WordPress dashboard to configure the plugin settings.
+- WordPress 5.6 or higher
+- PHP 7.3 or higher
+- jQuery (included with WordPress)
 
-== Configuration ==
+## 🛠️ Installation
 
-1. Navigate to 'Settings' > 'Reading Progress Bar' in the WordPress dashboard.
-2. Customize the options according to your preference, such as the color and height of the progress bar.
-3. Choose whether to display the progress bar on all posts or specific posts.
-4. Save your changes.
+1. Upload the plugin files to `/wp-content/plugins/blog-reading-progress-bar/`
+2. Activate the plugin through the 'Plugins' screen in WordPress
+3. Go to Settings > Reading Progress Bar to configure options
 
-== Frequently Asked Questions ==
+## ⚙️ Configuration
 
-= How can I customize the appearance of the progress bar? =
+### Basic Settings
+1. Navigate to **Settings > Reading Progress Bar**
+2. Configure appearance options:
+   - **Color**: Choose solid color or enable gradient
+   - **Height**: Set progress bar height (1-20px)
+   - **Position**: Top or bottom of screen
+   - **Border Radius**: Add rounded corners
+   - **Opacity**: Adjust transparency
 
-You can modify the color and height of the progress bar by navigating to 'Settings' > 'Reading Progress Bar' in the WordPress dashboard. Use the provided options to adjust the settings to your liking.
+### Advanced Effects
+- **Shadow**: Enable shadow with custom color and blur
+- **Border**: Add border with custom color and width
+- **Gradient**: Use gradient colors instead of solid color
 
-= Can I enable the progress bar on specific posts only?
+### Display Settings
+- **Show on Posts**: Enable/disable for blog posts
+- **Show on Pages**: Enable/disable for pages
+- **Show Reading Time**: Display estimated reading time
 
-Yes, you have the option to enable or disable the progress bar on individual posts. Edit a post and look for the "Reading Progress Bar" meta box in the sidebar. Check the box to display the progress bar on that post, or uncheck it to hide the progress bar.
+### Per-Post Settings
+- Edit any post and look for the "Reading Progress Bar" meta box
+- Check/uncheck to enable/disable for that specific post
 
-== Changelog ==
+## 🎨 Customization
 
-= 1.0.0 =
-* Initial release.
+### CSS Customization
+You can add custom CSS to further style the progress bar:
 
-== Upgrade Notice ==
+```css
+#reading-progress-bar {
+    /* Your custom styles */
+}
 
-= 1.0.0 =
-Initial release of the Reading Progress Bar plugin.
+#reading-time {
+    /* Custom reading time styles */
+}
+```
 
-== Screenshots ==
+### JavaScript Hooks
+The plugin provides several JavaScript events you can hook into:
 
-1. Progress bar displayed on a blog post.
-2. Plugin settings page in the WordPress dashboard.
+```javascript
+// Progress update event
+$(document).on('brp_progress_update', function(e, progress) {
+    console.log('Progress:', progress + '%');
+});
 
-== Upgrade Notice ==
+// Reading time calculation event
+$(document).on('brp_reading_time_calculated', function(e, time) {
+    console.log('Reading time:', time);
+});
+```
 
-= 1.0.0 =
-Initial release of the Reading Progress Bar plugin.
+## 🔧 Developer Features
 
-== License ==
+### Filters
+- `brp_progress_bar_color`: Modify the default color
+- `brp_reading_time_text`: Customize reading time text
+- `brp_should_display_bar`: Control when to show the progress bar
 
-This plugin is released under the GPL-2.0+ license. You can find a copy of the license in the `license.txt` file or visit [http://www.gnu.org/licenses/gpl-2.0.txt](http://www.gnu.org/licenses/gpl-2.0.txt) for more information.
+### Actions
+- `brp_before_progress_bar`: Fires before progress bar is rendered
+- `brp_after_progress_bar`: Fires after progress bar is rendered
+- `brp_progress_updated`: Fires when progress is updated
+
+## 📊 Performance
+
+The plugin is optimized for performance:
+- Uses `requestAnimationFrame` for smooth scrolling
+- Intersection Observer for efficient tracking
+- Debounced event handlers
+- Minimal DOM queries
+- Efficient CSS transitions
+
+## 🌟 Changelog
+
+### Version 2.0.0
+- ✨ **NEW**: Modern admin dashboard with live preview
+- ✨ **NEW**: Gradient color support
+- ✨ **NEW**: Shadow and border effects
+- ✨ **NEW**: Position options (top/bottom)
+- ✨ **NEW**: Opacity and border radius controls
+- ✨ **NEW**: Reading time display
+- ✨ **NEW**: Enhanced JavaScript with performance optimizations
+- ✨ **NEW**: Touch gesture support for mobile
+- ✨ **NEW**: Keyboard navigation support
+- ✨ **NEW**: Accessibility improvements
+- ✨ **NEW**: Statistics dashboard
+- 🎨 **IMPROVED**: Modern UI/UX design
+- 🚀 **IMPROVED**: Better performance and responsiveness
+
+### Version 1.0.7
+- Initial release with basic progress bar functionality
+
+## 🤝 Contributing
+
+Contributions are welcome! Please feel free to submit a Pull Request.
+
+## 📄 License
+
+This plugin is licensed under the GPL v2 or later.
+
+## 👨‍💻 Author
+
+**ifatwp** - [WordPress Blog](https://ifatwp.wordpress.com/)
+
+## 🙏 Support
+
+For support, feature requests, or bug reports, please visit the [plugin page](https://ifatwp.wordpress.com/2023/10/17/blog-reading-progress/) or create an issue on GitHub.
+
+---

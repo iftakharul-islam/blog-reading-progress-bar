@@ -123,7 +123,7 @@ Absolutely! Version 2.0.0 includes full gradient support. You can choose between
 
 == Changelog ==
 
-= 2.0.0 - Major Update =
+= 2.0.0 - Major Update - July 15, 2025  =
 
 **New Features:**
 - ✨ Modern admin dashboard with tabbed interface

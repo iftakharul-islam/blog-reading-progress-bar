@@ -563,3 +563,10 @@ input:checked + .brp-slider:before {
     gap: 10px;
     animation: fadeIn 0.3s ease;
 } 
+
+.wp-core-ui .notice.is-dismissible {
+    padding-right: 38px;
+    position: relative;
+    top: 220px;
+    left: 490px;
+}

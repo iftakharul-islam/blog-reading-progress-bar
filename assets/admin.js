@@ -65,7 +65,9 @@ jQuery(document).ready(function($) {
         var value = $(this).data('value');
         $(this).siblings().removeClass('active');
         $(this).addClass('active');
-        $(this).siblings('input[type="hidden"]').val(value);
+        $(this).siblings('input[type="hidden"]').val(value);        
+     
+        movePreviewBar(value); // Move preview bar based on position
         updatePreview();
     });
 
@@ -127,6 +129,17 @@ jQuery(document).ready(function($) {
         }
 
         $('#brp-preview-bar').css(css);
+    }
+
+    // Move preview bar based on position
+    function movePreviewBar(position) {
+        var $bar = $('#brp-preview-bar');
+        var $content = $('.brp-preview-content');
+        if (position === 'bottom') {
+            $bar.insertAfter($content);
+        } else {
+            $bar.insertBefore($content);
+        }
     }
 
     // Bind preview updates to form changes

@@ -19,6 +19,9 @@
     box-shadow: 0 10px 30px rgba(102, 126, 234, 0.3);
 }
 
+#setting-error-settings_updated p {
+    color: black;
+}
 .brp-header-content h1 {
     margin: 0 0 10px 0;
     font-size: 2.5em;
@@ -560,3 +563,10 @@ input:checked + .brp-slider:before {
     gap: 10px;
     animation: fadeIn 0.3s ease;
 } 
+
+.wp-core-ui .notice.is-dismissible {
+    padding-right: 38px;
+    position: relative;
+    top: 220px;
+    left: 490px;
+}

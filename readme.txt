@@ -4,8 +4,8 @@ Contributors: ifatwp
 Tags: progress bar, blog, posts, reading time, user experience
 Requires at least: 5.6
 Requires PHP: 7.3
-Tested up to: WordPress 6.8.1
-Stable tag: 2.0.0
+Tested up to: WordPress 6.8.2
+Stable tag: 2.0.1
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.txt
 
@@ -122,6 +122,11 @@ Yes! The plugin is fully responsive and includes touch gesture support for mobil
 Absolutely! Version 2.0.0 includes full gradient support. You can choose between solid colors and gradients, with custom start and end colors for beautiful visual effects.
 
 == Changelog ==
+
+
+= 2.0.1 - July 20, 2025  =
+- Fixed: Progressbar setting preview top,bottom reflection issue. 
+- Fixed: Save notice inapropriate position.
 
 = 2.0.0 - Major Update - July 15, 2025  =
 
